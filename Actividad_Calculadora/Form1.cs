@@ -161,6 +161,7 @@ namespace Actividad_Calculadora
         {
             //Funcion que hara las acciones del igual
             //Es decir, leera el caracter de la operacion, y despues la ejecutara
+            bool Execute_Operation = false;
             if (First_Data && Second_Data)
             {
                 switch (Operation_Key)
@@ -168,24 +169,41 @@ namespace Actividad_Calculadora
                     case 1:
                         Result = First_num + Second_num;
                         Result_Data = true;
+                        Execute_Operation = true;
                         break;
                     case 2:
                         Result= First_num - Second_num;
                         Result_Data = true;
+                        Execute_Operation = true;
                         break;
                     case 3:
                         Result = First_num * Second_num;
                         Result_Data = true;
+                        Execute_Operation = true;
                         break;
                     case 4:
-                        Result = First_num / Second_num;
-                        Result_Data = true;
+                        if(Second_num == 0)
+                        {
+                            MessageBox.Show("NO SE PUEDE DIVIDIR ENTRE 0");
+                            TextBoard.Clear();
+                        }
+                        else
+                        {
+                            Result = First_num / Second_num;
+                            Result_Data = true;
+                            Execute_Operation = true;
+                        }
+                        
                         break;
 
 
                 }
                 //Enviar los datos al historial
-                Sent_To_History(First_num,Operation,Second_num,Result);
+                if(Execute_Operation==true)
+                {
+                    Sent_To_History(First_num, Operation, Second_num, Result);
+                }
+                
                 //Ahora el primer dato es el resultado
                 First_num = Result;
                 Second_num = 0;
