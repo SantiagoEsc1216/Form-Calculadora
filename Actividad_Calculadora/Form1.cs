@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Actividad_Calculadora
 {
-    public partial class Form1 : Form
+    public partial class Fondo : Form
     {
         int First_num; //Almacenara el primer numero ingresado 
         bool First_Data=false; //Sirve para saber si ya se ingreso el primer numero o no 
@@ -22,7 +22,7 @@ namespace Actividad_Calculadora
         int Result;
         bool Result_Data = false;
 
-        public Form1()
+        public Fondo()
         {
             InitializeComponent();
         }
@@ -39,15 +39,17 @@ namespace Actividad_Calculadora
             //Boton de division xd
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "/";
             Operation_Key = 4;
-            Binary_Option();
+            
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             //Este es el igual pero le di click antes de cambiarle el nombre:(((
+            Assing_number();
             Binary_Option();
 
         }
@@ -153,7 +155,7 @@ namespace Actividad_Calculadora
         public void Sent_To_History(int First, string Ope, int Second,int Result)
         {
             //Funcion que enviara los datos al historial para que se guarden 
-            History.Items.Add(First+"" + Ope +" "+ Second + " = " + Result);
+            History.Items.Add(First+" "+ Ope +" "+ Second + " = " + Result);
         }
         public void Binary_Option()
         {
@@ -187,6 +189,7 @@ namespace Actividad_Calculadora
                 //Ahora el primer dato es el resultado
                 First_num = Result;
                 Second_num = 0;
+                First_Data= false;
                 Second_Data = false;
                 TextBoard.Text = Result.ToString();
             }
@@ -196,30 +199,33 @@ namespace Actividad_Calculadora
         {
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "+";
             Operation_Key = 1;
-            Binary_Option();
+            
         }
 
         private void Res_Click(object sender, EventArgs e)
         {
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "-";
             Operation_Key= 2;
-            Binary_Option();
+            
         }
 
         private void Mult_Click(object sender, EventArgs e)
         {
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "*";
             Operation_Key = 3;
-            Binary_Option();
+            
         }
 
         private void Memory_Click(object sender, EventArgs e)
@@ -230,6 +236,16 @@ namespace Actividad_Calculadora
         private void ListOfMemory_SelectedIndexChanged(object sender, EventArgs e)
         {
             TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoard_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
