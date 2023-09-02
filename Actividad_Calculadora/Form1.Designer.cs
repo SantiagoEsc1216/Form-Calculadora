@@ -51,6 +51,7 @@
             this.History = new System.Windows.Forms.ListBox();
             this.History_Label = new System.Windows.Forms.Label();
             this.Memory_label = new System.Windows.Forms.Label();
+            this.point = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Number_7
@@ -359,12 +360,27 @@
             this.Memory_label.TabIndex = 23;
             this.Memory_label.Text = "Memory";
             // 
+            // point
+            // 
+            this.point.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.point.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.point.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.point.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.point.Location = new System.Drawing.Point(261, 308);
+            this.point.Name = "point";
+            this.point.Size = new System.Drawing.Size(100, 40);
+            this.point.TabIndex = 24;
+            this.point.Text = ".";
+            this.point.UseVisualStyleBackColor = false;
+            this.point.Click += new System.EventHandler(this.point_Click);
+            // 
             // Fondo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.point);
             this.Controls.Add(this.Memory_label);
             this.Controls.Add(this.History_Label);
             this.Controls.Add(this.History);
@@ -422,6 +438,7 @@
         private System.Windows.Forms.ListBox History;
         private System.Windows.Forms.Label History_Label;
         private System.Windows.Forms.Label Memory_label;
+        private System.Windows.Forms.Button point;
     }
 }
 

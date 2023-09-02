@@ -9,17 +9,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//:TODO
+// Error al concatenar operaciones (Simbolo = concatenar, Numero = reiniciar)
+// Clear debe reiniciar banderas
+// Bug: No se puede colocar mas de un numero despues de concatenar 2 operaciones
+// 
+// Memory como listbox
+// Colores
+
 namespace Actividad_Calculadora
 {
     public partial class Fondo : Form
     {
-        int First_num; //Almacenara el primer numero ingresado 
+        float First_num; //Almacenara el primer numero ingresado 
         bool First_Data=false; //Sirve para saber si ya se ingreso el primer numero o no 
-        int Second_num;
+        float Second_num;
         bool Second_Data=false;
         string Operation;
         int Operation_Key;
-        int Result;
+        float Result;
         bool Result_Data = false;
 
         public Fondo()
@@ -65,7 +73,7 @@ namespace Actividad_Calculadora
             {
                 //Convertir de cadena a numero
                 
-                if (!(int.TryParse(TextBoard.Text, out First_num)))
+                if (!(float.TryParse(TextBoard.Text, out First_num)))
                 {
                     MessageBox.Show("No se pueden ingresar letras");
                 }
@@ -78,7 +86,7 @@ namespace Actividad_Calculadora
             }
             else if(!Second_Data)
             {
-                if(!(int.TryParse(TextBoard.Text, out Second_num)))
+                if(!(float.TryParse(TextBoard.Text, out Second_num)))
                 {
                     MessageBox.Show("No se pueden ingresar letras");
                 }
@@ -92,63 +100,73 @@ namespace Actividad_Calculadora
             Result_Data = false;
             TextBoard.Clear();
         }
-        public void Write_Number(int num)
+        public void Write(int num)
         {
             //Concatena los numeros en el cuadro de texto
             if(Result_Data)
             {
                 TextBoard.Clear();
             }
-            TextBoard.Text= TextBoard.Text.ToString()+ num;
+            TextBoard.Text= TextBoard.Text + num;
         }
+        public void Write(string str)
+        {
+            TextBoard.Text = TextBoard.Text + str;
+        }
+
         private void Number_0_Click(object sender, EventArgs e)
         {
-            Write_Number(0);
+            Write(0);
         }
 
         private void Number_1_Click(object sender, EventArgs e)
         {
-            Write_Number(1);
+            Write(1);
         }
 
         private void Number_2_Click(object sender, EventArgs e)
         {
-            Write_Number(2);
+            Write(2);
         }
 
         private void Number_3_Click(object sender, EventArgs e)
         {
-            Write_Number(3);
+            Write(3);
         }
 
         private void Number_4_Click(object sender, EventArgs e)
         {
-            Write_Number(4);
+            Write(4);
         }
 
         private void Number_5_Click(object sender, EventArgs e)
         {
-            Write_Number(5);
+            Write(5);
         }
 
         private void Number_6_Click(object sender, EventArgs e)
         {
-            Write_Number(6);
+            Write(6);
         }
 
         private void Number_7_Click(object sender, EventArgs e)
         {
-            Write_Number(7);
+            Write(7);
         }
 
         private void Number_8_Click(object sender, EventArgs e)
         {
-            Write_Number(8);
+            Write(8);
         }
 
         private void Number_9_Click(object sender, EventArgs e)
         {
-            Write_Number(9);
+            Write(9);
+        }
+
+        private void point_Click(object sender, EventArgs e)
+        {
+            Write(".");
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -156,7 +174,7 @@ namespace Actividad_Calculadora
             TextBoard.Clear();
         }
 
-        public void Sent_To_History(int First, string Ope, int Second,int Result)
+        public void Sent_To_History(float First, string Ope, float Second, float Result)
         {
             //Funcion que enviara los datos al historial para que se guarden 
             History.Items.Add(First+" "+ Ope +" "+ Second + " = " + Result);
