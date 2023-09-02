@@ -11,7 +11,6 @@ using System.Windows.Forms;
 
 //:TODO
 // Error al concatenar operaciones (Simbolo = concatenar, Numero = reiniciar)
-// Clear debe reiniciar banderas
 // Bug: No se puede colocar mas de un numero despues de concatenar 2 operaciones
 // 
 // Memory como listbox
@@ -172,6 +171,9 @@ namespace Actividad_Calculadora
         private void Clear_Click(object sender, EventArgs e)
         {
             TextBoard.Clear();
+            First_Data = false;
+            Second_Data = false;
+            Result_Data = false;
         }
 
         public void Sent_To_History(float First, string Ope, float Second, float Result)
