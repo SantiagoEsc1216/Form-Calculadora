@@ -42,10 +42,10 @@
             this.Mult = new System.Windows.Forms.Button();
             this.Res = new System.Windows.Forms.Button();
             this.Sum = new System.Windows.Forms.Button();
-            this.Delete = new System.Windows.Forms.Button();
+            this.delete_btn = new System.Windows.Forms.Button();
             this.Equal = new System.Windows.Forms.Button();
-            this.Clear = new System.Windows.Forms.Button();
-            this.Memory = new System.Windows.Forms.Button();
+            this.clear_btn = new System.Windows.Forms.Button();
+            this.memory_btn = new System.Windows.Forms.Button();
             this.TextBoard = new System.Windows.Forms.TextBox();
             this.ListOfMemory = new System.Windows.Forms.ComboBox();
             this.History = new System.Windows.Forms.ListBox();
@@ -205,7 +205,7 @@
             this.Div.TabIndex = 10;
             this.Div.Text = "/";
             this.Div.UseVisualStyleBackColor = false;
-            this.Div.Click += new System.EventHandler(this.button11_Click);
+            this.Div.Click += new System.EventHandler(this.division_click);
             // 
             // Mult
             // 
@@ -249,19 +249,19 @@
             this.Sum.UseVisualStyleBackColor = false;
             this.Sum.Click += new System.EventHandler(this.Sum_Click);
             // 
-            // Delete
+            // delete_btn
             // 
-            this.Delete.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Delete.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.Delete.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete.Location = new System.Drawing.Point(261, 124);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(100, 40);
-            this.Delete.TabIndex = 14;
-            this.Delete.Text = "Delete";
-            this.Delete.UseVisualStyleBackColor = false;
-            this.Delete.Click += new System.EventHandler(this.button15_Click);
+            this.delete_btn.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.delete_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.delete_btn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_btn.Location = new System.Drawing.Point(261, 124);
+            this.delete_btn.Name = "delete_btn";
+            this.delete_btn.Size = new System.Drawing.Size(100, 40);
+            this.delete_btn.TabIndex = 14;
+            this.delete_btn.Text = "Delete";
+            this.delete_btn.UseVisualStyleBackColor = false;
+            this.delete_btn.Click += new System.EventHandler(this.delete_click);
             // 
             // Equal
             // 
@@ -275,35 +275,35 @@
             this.Equal.TabIndex = 15;
             this.Equal.Text = "=";
             this.Equal.UseVisualStyleBackColor = false;
-            this.Equal.Click += new System.EventHandler(this.button16_Click);
+            this.Equal.Click += new System.EventHandler(this.result_click);
             // 
-            // Clear
+            // clear_btn
             // 
-            this.Clear.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Clear.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Clear.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.Clear.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.Location = new System.Drawing.Point(155, 124);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(100, 40);
-            this.Clear.TabIndex = 16;
-            this.Clear.Text = "Clear";
-            this.Clear.UseVisualStyleBackColor = false;
-            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            this.clear_btn.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.clear_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.clear_btn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_btn.Location = new System.Drawing.Point(155, 124);
+            this.clear_btn.Name = "clear_btn";
+            this.clear_btn.Size = new System.Drawing.Size(100, 40);
+            this.clear_btn.TabIndex = 16;
+            this.clear_btn.Text = "Clear";
+            this.clear_btn.UseVisualStyleBackColor = false;
+            this.clear_btn.Click += new System.EventHandler(this.Clear_Click);
             // 
-            // Memory
+            // memory_btn
             // 
-            this.Memory.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Memory.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Memory.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.Memory.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Memory.Location = new System.Drawing.Point(49, 124);
-            this.Memory.Name = "Memory";
-            this.Memory.Size = new System.Drawing.Size(100, 40);
-            this.Memory.TabIndex = 17;
-            this.Memory.Text = "M";
-            this.Memory.UseVisualStyleBackColor = false;
-            this.Memory.Click += new System.EventHandler(this.Memory_Click);
+            this.memory_btn.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.memory_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.memory_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.memory_btn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memory_btn.Location = new System.Drawing.Point(49, 124);
+            this.memory_btn.Name = "memory_btn";
+            this.memory_btn.Size = new System.Drawing.Size(100, 40);
+            this.memory_btn.TabIndex = 17;
+            this.memory_btn.Text = "M";
+            this.memory_btn.UseVisualStyleBackColor = false;
+            this.memory_btn.Click += new System.EventHandler(this.Memory_Click);
             // 
             // TextBoard
             // 
@@ -370,10 +370,10 @@
             this.Controls.Add(this.History);
             this.Controls.Add(this.ListOfMemory);
             this.Controls.Add(this.TextBoard);
-            this.Controls.Add(this.Memory);
-            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.memory_btn);
+            this.Controls.Add(this.clear_btn);
             this.Controls.Add(this.Equal);
-            this.Controls.Add(this.Delete);
+            this.Controls.Add(this.delete_btn);
             this.Controls.Add(this.Sum);
             this.Controls.Add(this.Res);
             this.Controls.Add(this.Mult);
@@ -413,10 +413,10 @@
         private System.Windows.Forms.Button Mult;
         private System.Windows.Forms.Button Res;
         private System.Windows.Forms.Button Sum;
-        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Button delete_btn;
         private System.Windows.Forms.Button Equal;
-        private System.Windows.Forms.Button Clear;
-        private System.Windows.Forms.Button Memory;
+        private System.Windows.Forms.Button clear_btn;
+        private System.Windows.Forms.Button memory_btn;
         private System.Windows.Forms.TextBox TextBoard;
         private System.Windows.Forms.ComboBox ListOfMemory;
         private System.Windows.Forms.ListBox History;

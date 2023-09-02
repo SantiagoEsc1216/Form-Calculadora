@@ -27,14 +27,18 @@ namespace Actividad_Calculadora
             InitializeComponent();
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void delete_click(object sender, EventArgs e)
         {
             //Boton de delete 
             //Le di click sin querer antes de cambiar el nombre:( 
-            TextBoard.Text= TextBoard.Text.Remove(TextBoard.Text.Length-1);
+            // Expecion: borrar en blanco
+            if(TextBoard.Text.Length > 0)
+            {
+                TextBoard.Text = TextBoard.Text.Remove(TextBoard.Text.Length - 1);
+            }
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void division_click(object sender, EventArgs e)
         {
             //Boton de division xd
             //Primera vez que se presiona el boton asigna el valor
@@ -46,7 +50,7 @@ namespace Actividad_Calculadora
             
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void result_click(object sender, EventArgs e)
         {
             //Este es el igual pero le di click antes de cambiarle el nombre:(((
             Assing_number();
