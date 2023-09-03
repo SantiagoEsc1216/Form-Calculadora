@@ -52,6 +52,7 @@
             this.History_Label = new System.Windows.Forms.Label();
             this.Memory_label = new System.Windows.Forms.Label();
             this.point = new System.Windows.Forms.Button();
+            this.operation_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Number_7
@@ -374,12 +375,23 @@
             this.point.UseVisualStyleBackColor = false;
             this.point.Click += new System.EventHandler(this.point_Click);
             // 
+            // operation_label
+            // 
+            this.operation_label.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.operation_label.Location = new System.Drawing.Point(49, 44);
+            this.operation_label.Name = "operation_label";
+            this.operation_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.operation_label.Size = new System.Drawing.Size(418, 18);
+            this.operation_label.TabIndex = 25;
+            this.operation_label.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Fondo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.operation_label);
             this.Controls.Add(this.point);
             this.Controls.Add(this.Memory_label);
             this.Controls.Add(this.History_Label);
@@ -439,6 +451,7 @@
         private System.Windows.Forms.Label History_Label;
         private System.Windows.Forms.Label Memory_label;
         private System.Windows.Forms.Button point;
+        private System.Windows.Forms.Label operation_label;
     }
 }
 

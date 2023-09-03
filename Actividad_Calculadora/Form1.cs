@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //:TODO
-// Error al concatenar operaciones (Simbolo = concatenar, Numero = reiniciar)
-// Bug: No se puede colocar mas de un numero despues de concatenar 2 operaciones
-// 
+// Recuperar operacion del historial
+// Bug: Usar 2 veces seguidas un operador no concatena las operaciones
 // Memory como listbox
 // Colores
 
@@ -28,6 +27,7 @@ namespace Actividad_Calculadora
         int Operation_Key;
         float Result;
         bool Result_Data = false;
+        bool buffer = false; //Hay una serie de operaciones anteriores
 
         public Fondo()
         {
@@ -47,13 +47,13 @@ namespace Actividad_Calculadora
 
         private void division_click(object sender, EventArgs e)
         {
+            //Asignar el simbolo
+            Operation = "/";
+            Operation_Key = 4;
             //Boton de division xd
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
-            //Asignar el simbolo
-            Operation = "/";
-            Operation_Key = 4;
             
         }
 
@@ -67,7 +67,7 @@ namespace Actividad_Calculadora
         //Funcion que asignara el valor a las variables cada vez que es presionado un boton de operador
         public void Assing_number()
         {
-           
+            
             if(!First_Data) //Primer numero no tiene valor 
             {
                 //Convertir de cadena a numero
@@ -78,13 +78,18 @@ namespace Actividad_Calculadora
                 }
                 else
                 {
+                    operation_label.Text = TextBoard.Text +" "+ Operation;
                     //Dato guardado correctamente
-                 
                     First_Data = true;
+                    
                 }
             }
             else if(!Second_Data)
             {
+                if (buffer)
+                {
+                    operation_label.Text = First_num +" "+ Operation+" =";
+                }
                 if(!(float.TryParse(TextBoard.Text, out Second_num)))
                 {
                     MessageBox.Show("No se pueden ingresar letras");
@@ -171,6 +176,7 @@ namespace Actividad_Calculadora
         private void Clear_Click(object sender, EventArgs e)
         {
             TextBoard.Clear();
+            operation_label.Text = string.Empty;
             First_Data = false;
             Second_Data = false;
             Result_Data = false;
@@ -230,6 +236,7 @@ namespace Actividad_Calculadora
                 
                 //Ahora el primer dato es el resultado
                 First_num = Result;
+                operation_label.Text = operation_label.Text +" "+" "+Second_num + " =";
                 Second_num = 0;
                 First_Data= false;
                 Second_Data = false;
@@ -239,34 +246,34 @@ namespace Actividad_Calculadora
         }
         private void Sum_Click(object sender, EventArgs e)
         {
-            //Primera vez que se presiona el boton asigna el valor
-            Assing_number();
-            Binary_Option();
             //Asignar el simbolo
             Operation = "+";
             Operation_Key = 1;
+            //Primera vez que se presiona el boton asigna el valor
+            Assing_number();
+            Binary_Option();
             
         }
 
         private void Res_Click(object sender, EventArgs e)
         {
+            //Asignar el simbolo
+            Operation = "-";
+            Operation_Key = 2;
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
-            //Asignar el simbolo
-            Operation = "-";
-            Operation_Key= 2;
             
         }
 
         private void Mult_Click(object sender, EventArgs e)
         {
-            //Primera vez que se presiona el boton asigna el valor
-            Assing_number();
-            Binary_Option();
             //Asignar el simbolo
             Operation = "*";
             Operation_Key = 3;
+            //Primera vez que se presiona el boton asigna el valor
+            Assing_number();
+            Binary_Option();
             
         }
 
