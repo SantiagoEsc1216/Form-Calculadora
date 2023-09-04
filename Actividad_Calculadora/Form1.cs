@@ -294,7 +294,10 @@ namespace Actividad_Calculadora
 
         private void ListOfMemory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
+            if (ListOfMemory.SelectedIndex >= 0)
+            {
+                TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
+            }
         }
 
         private void History_SelectedIndexChanged(object sender, EventArgs e)
