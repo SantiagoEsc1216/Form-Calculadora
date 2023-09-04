@@ -11,8 +11,7 @@ using System.Windows.Forms;
 
 //:TODO
 // Recuperar operacion del historial
-// Bug: Usar 2 veces seguidas un operador no concatena las operaciones
-// Colores
+// Bug: Usar 2 veces seguidas un operador no concatena las operacione
 
 namespace Actividad_Calculadora
 {
@@ -297,6 +296,10 @@ namespace Actividad_Calculadora
             if (ListOfMemory.SelectedIndex >= 0)
             {
                 TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
+                operation_label.Text = string.Empty;
+                First_Data = true;
+                float.TryParse(ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString(), out First_num);
+                Second_Data = false;
             }
         }
 
