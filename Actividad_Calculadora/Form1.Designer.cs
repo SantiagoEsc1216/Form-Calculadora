@@ -57,10 +57,11 @@
             // 
             // Number_7
             // 
-            this.Number_7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_7.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_7.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_7.Location = new System.Drawing.Point(49, 170);
             this.Number_7.Name = "Number_7";
             this.Number_7.Size = new System.Drawing.Size(100, 40);
@@ -71,10 +72,11 @@
             // 
             // Number_8
             // 
-            this.Number_8.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_8.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_8.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_8.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_8.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_8.Location = new System.Drawing.Point(155, 170);
             this.Number_8.Name = "Number_8";
             this.Number_8.Size = new System.Drawing.Size(100, 40);
@@ -85,10 +87,11 @@
             // 
             // Number_9
             // 
-            this.Number_9.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_9.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_9.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_9.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_9.Location = new System.Drawing.Point(261, 170);
             this.Number_9.Name = "Number_9";
             this.Number_9.Size = new System.Drawing.Size(100, 40);
@@ -99,10 +102,11 @@
             // 
             // Number_4
             // 
-            this.Number_4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_4.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_4.Location = new System.Drawing.Point(49, 216);
             this.Number_4.Name = "Number_4";
             this.Number_4.Size = new System.Drawing.Size(100, 40);
@@ -113,10 +117,11 @@
             // 
             // Number_5
             // 
-            this.Number_5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_5.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_5.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_5.Location = new System.Drawing.Point(155, 216);
             this.Number_5.Name = "Number_5";
             this.Number_5.Size = new System.Drawing.Size(100, 40);
@@ -127,10 +132,11 @@
             // 
             // Number_6
             // 
-            this.Number_6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_6.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_6.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_6.Location = new System.Drawing.Point(261, 216);
             this.Number_6.Name = "Number_6";
             this.Number_6.Size = new System.Drawing.Size(100, 40);
@@ -141,10 +147,11 @@
             // 
             // Number_1
             // 
-            this.Number_1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_1.Location = new System.Drawing.Point(49, 262);
             this.Number_1.Name = "Number_1";
             this.Number_1.Size = new System.Drawing.Size(100, 40);
@@ -155,10 +162,11 @@
             // 
             // Number_2
             // 
-            this.Number_2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_2.Location = new System.Drawing.Point(155, 262);
             this.Number_2.Name = "Number_2";
             this.Number_2.Size = new System.Drawing.Size(100, 40);
@@ -169,10 +177,11 @@
             // 
             // Number_3
             // 
-            this.Number_3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_3.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_3.Location = new System.Drawing.Point(261, 262);
             this.Number_3.Name = "Number_3";
             this.Number_3.Size = new System.Drawing.Size(100, 40);
@@ -183,10 +192,11 @@
             // 
             // Number_0
             // 
-            this.Number_0.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Number_0.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Number_0.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Number_0.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Number_0.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Number_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number_0.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_0.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Number_0.Location = new System.Drawing.Point(155, 308);
             this.Number_0.Name = "Number_0";
             this.Number_0.Size = new System.Drawing.Size(100, 40);
@@ -197,10 +207,11 @@
             // 
             // Div
             // 
-            this.Div.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Div.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Div.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Div.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Div.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Div.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Div.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Div.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Div.Location = new System.Drawing.Point(367, 124);
             this.Div.Name = "Div";
             this.Div.Size = new System.Drawing.Size(100, 40);
@@ -211,10 +222,11 @@
             // 
             // Mult
             // 
-            this.Mult.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Mult.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Mult.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Mult.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Mult.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Mult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Mult.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mult.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Mult.Location = new System.Drawing.Point(367, 170);
             this.Mult.Name = "Mult";
             this.Mult.Size = new System.Drawing.Size(100, 40);
@@ -225,10 +237,11 @@
             // 
             // Res
             // 
-            this.Res.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Res.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Res.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Res.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Res.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Res.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Res.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Res.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Res.Location = new System.Drawing.Point(367, 216);
             this.Res.Name = "Res";
             this.Res.Size = new System.Drawing.Size(100, 40);
@@ -239,10 +252,11 @@
             // 
             // Sum
             // 
-            this.Sum.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Sum.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Sum.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Sum.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Sum.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Sum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sum.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sum.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Sum.Location = new System.Drawing.Point(367, 262);
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(100, 40);
@@ -253,10 +267,11 @@
             // 
             // delete_btn
             // 
-            this.delete_btn.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.delete_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.delete_btn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.delete_btn.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_btn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_btn.ForeColor = System.Drawing.SystemColors.Highlight;
             this.delete_btn.Location = new System.Drawing.Point(261, 124);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.Size = new System.Drawing.Size(100, 40);
@@ -267,10 +282,11 @@
             // 
             // Equal
             // 
-            this.Equal.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.Equal.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Equal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Equal.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Equal.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Equal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Equal.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Equal.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Equal.Location = new System.Drawing.Point(367, 308);
             this.Equal.Name = "Equal";
             this.Equal.Size = new System.Drawing.Size(100, 40);
@@ -281,10 +297,11 @@
             // 
             // clear_btn
             // 
-            this.clear_btn.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.clear_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.clear_btn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.clear_btn.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_btn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_btn.ForeColor = System.Drawing.SystemColors.Highlight;
             this.clear_btn.Location = new System.Drawing.Point(155, 124);
             this.clear_btn.Name = "clear_btn";
             this.clear_btn.Size = new System.Drawing.Size(100, 40);
@@ -295,10 +312,11 @@
             // 
             // memory_btn
             // 
-            this.memory_btn.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.memory_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.memory_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.memory_btn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.memory_btn.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.memory_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.memory_btn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memory_btn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.memory_btn.Location = new System.Drawing.Point(49, 124);
             this.memory_btn.Name = "memory_btn";
             this.memory_btn.Size = new System.Drawing.Size(100, 40);
@@ -309,54 +327,62 @@
             // 
             // TextBoard
             // 
-            this.TextBoard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextBoard.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBoard.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoard.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.TextBoard.Location = new System.Drawing.Point(49, 68);
             this.TextBoard.Name = "TextBoard";
             this.TextBoard.ReadOnly = true;
-            this.TextBoard.Size = new System.Drawing.Size(418, 50);
+            this.TextBoard.Size = new System.Drawing.Size(418, 43);
             this.TextBoard.TabIndex = 18;
             this.TextBoard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TextBoard.TextChanged += new System.EventHandler(this.TextBoard_TextChanged);
             // 
             // History
             // 
-            this.History.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.History.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.History.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.History.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.History.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.History.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.History.FormattingEnabled = true;
-            this.History.ItemHeight = 16;
+            this.History.ItemHeight = 17;
             this.History.Location = new System.Drawing.Point(654, 68);
             this.History.Name = "History";
-            this.History.Size = new System.Drawing.Size(120, 292);
+            this.History.Size = new System.Drawing.Size(120, 289);
             this.History.TabIndex = 21;
             this.History.SelectedIndexChanged += new System.EventHandler(this.History_SelectedIndexChanged);
             // 
             // History_Label
             // 
             this.History_Label.AutoSize = true;
-            this.History_Label.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.History_Label.Location = new System.Drawing.Point(651, 44);
+            this.History_Label.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.History_Label.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.History_Label.Location = new System.Drawing.Point(650, 40);
             this.History_Label.Name = "History_Label";
-            this.History_Label.Size = new System.Drawing.Size(56, 18);
+            this.History_Label.Size = new System.Drawing.Size(76, 22);
             this.History_Label.TabIndex = 22;
             this.History_Label.Text = "History";
             // 
             // Memory_label
             // 
             this.Memory_label.AutoSize = true;
-            this.Memory_label.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Memory_label.Location = new System.Drawing.Point(497, 44);
+            this.Memory_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Memory_label.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Memory_label.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Memory_label.Location = new System.Drawing.Point(496, 40);
             this.Memory_label.Name = "Memory_label";
-            this.Memory_label.Size = new System.Drawing.Size(64, 18);
+            this.Memory_label.Size = new System.Drawing.Size(86, 22);
             this.Memory_label.TabIndex = 23;
             this.Memory_label.Text = "Memory";
             // 
             // point
             // 
-            this.point.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.point.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.point.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.point.BackColor = System.Drawing.SystemColors.Desktop;
+            this.point.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.point.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.point.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.point.ForeColor = System.Drawing.SystemColors.Highlight;
             this.point.Location = new System.Drawing.Point(261, 308);
             this.point.Name = "point";
             this.point.Size = new System.Drawing.Size(100, 40);
@@ -368,6 +394,7 @@
             // operation_label
             // 
             this.operation_label.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.operation_label.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.operation_label.Location = new System.Drawing.Point(49, 44);
             this.operation_label.Name = "operation_label";
             this.operation_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -377,10 +404,15 @@
             // 
             // ListOfMemory
             // 
+            this.ListOfMemory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.ListOfMemory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ListOfMemory.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListOfMemory.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ListOfMemory.FormattingEnabled = true;
+            this.ListOfMemory.ItemHeight = 17;
             this.ListOfMemory.Location = new System.Drawing.Point(500, 68);
             this.ListOfMemory.Name = "ListOfMemory";
-            this.ListOfMemory.Size = new System.Drawing.Size(120, 290);
+            this.ListOfMemory.Size = new System.Drawing.Size(120, 289);
             this.ListOfMemory.TabIndex = 26;
             this.ListOfMemory.SelectedIndexChanged += new System.EventHandler(this.ListOfMemory_SelectedIndexChanged);
             // 
@@ -388,7 +420,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ListOfMemory);
             this.Controls.Add(this.operation_label);
