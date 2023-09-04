@@ -12,7 +12,6 @@ using System.Windows.Forms;
 //:TODO
 // Recuperar operacion del historial
 // Bug: Usar 2 veces seguidas un operador no concatena las operaciones
-// Memory como listbox
 // Colores
 
 namespace Actividad_Calculadora
@@ -54,7 +53,7 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
-            
+
         }
 
         private void result_click(object sender, EventArgs e)
@@ -67,28 +66,28 @@ namespace Actividad_Calculadora
         //Funcion que asignara el valor a las variables cada vez que es presionado un boton de operador
         public void Assing_number()
         {
-            
+
             if(!First_Data) //Primer numero no tiene valor 
             {
                 //Convertir de cadena a numero
-                
+
                 if (!(float.TryParse(TextBoard.Text, out First_num)))
                 {
                     MessageBox.Show("No se pueden ingresar letras");
                 }
                 else
                 {
-                    operation_label.Text = TextBoard.Text +" "+ Operation;
+                    operation_label.Text = TextBoard.Text + " " + Operation;
                     //Dato guardado correctamente
                     First_Data = true;
-                    
+
                 }
             }
             else if(!Second_Data)
             {
                 if (buffer)
                 {
-                    operation_label.Text = First_num +" "+ Operation+" =";
+                    operation_label.Text = First_num + " " + Operation + " =";
                 }
                 if(!(float.TryParse(TextBoard.Text, out Second_num)))
                 {
@@ -98,7 +97,7 @@ namespace Actividad_Calculadora
                 {
                     //Dato correctamente
                     Second_Data = true;
-                   
+
                 }
             }
             Result_Data = false;
@@ -111,7 +110,7 @@ namespace Actividad_Calculadora
             {
                 TextBoard.Clear();
             }
-            TextBoard.Text= TextBoard.Text + num;
+            TextBoard.Text = TextBoard.Text + num;
         }
         public void Write(string str)
         {
@@ -185,7 +184,7 @@ namespace Actividad_Calculadora
         public void Sent_To_History(float First, string Ope, float Second, float Result)
         {
             //Funcion que enviara los datos al historial para que se guarden 
-            History.Items.Add(First+" "+ Ope +" "+ Second + " = " + Result);
+            History.Items.Add(First + " " + Ope + " " + Second + " = " + Result);
         }
         public void Binary_Option()
         {
@@ -202,7 +201,7 @@ namespace Actividad_Calculadora
                         Execute_Operation = true;
                         break;
                     case 2:
-                        Result= First_num - Second_num;
+                        Result = First_num - Second_num;
                         Result_Data = true;
                         Execute_Operation = true;
                         break;
@@ -212,7 +211,7 @@ namespace Actividad_Calculadora
                         Execute_Operation = true;
                         break;
                     case 4:
-                        if(Second_num == 0)
+                        if (Second_num == 0)
                         {
                             MessageBox.Show("NO SE PUEDE DIVIDIR ENTRE 0");
                             TextBoard.Clear();
@@ -223,26 +222,26 @@ namespace Actividad_Calculadora
                             Result_Data = true;
                             Execute_Operation = true;
                         }
-                        
+
                         break;
 
 
                 }
                 //Enviar los datos al historial
-                if(Execute_Operation==true)
+                if (Execute_Operation == true)
                 {
                     Sent_To_History(First_num, Operation, Second_num, Result);
                 }
-                
+
                 //Ahora el primer dato es el resultado
                 First_num = Result;
-                operation_label.Text = operation_label.Text +" "+" "+Second_num + " =";
+                operation_label.Text = operation_label.Text + " " + " " + Second_num + " =";
                 Second_num = 0;
-                First_Data= false;
+                First_Data = false;
                 Second_Data = false;
                 TextBoard.Text = Result.ToString();
             }
-            
+
         }
         private void Sum_Click(object sender, EventArgs e)
         {
@@ -252,7 +251,7 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
-            
+
         }
 
         private void Res_Click(object sender, EventArgs e)
@@ -263,7 +262,7 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
-            
+
         }
 
         private void Mult_Click(object sender, EventArgs e)
@@ -274,7 +273,7 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
-            
+
         }
 
         private void Memory_Click(object sender, EventArgs e)
@@ -282,10 +281,6 @@ namespace Actividad_Calculadora
             ListOfMemory.Items.Add(TextBoard.Text);
         }
 
-        private void ListOfMemory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -295,6 +290,31 @@ namespace Actividad_Calculadora
         private void TextBoard_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ListOfMemory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
+        }
+
+        private void History_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Recuperar operacion
+            string op = History.Items[History.SelectedIndex].ToString();
+            string[] elements = op.Split(' ');
+
+            float.TryParse(elements[0], out First_num);
+            Operation = elements[1];
+            float.TryParse(elements[2], out Second_num);
+            float.TryParse(elements[4], out Result);
+
+            operation_label.Text = First_num + " " + Operation + " " + Second_num +" =";
+            TextBoard.Text = Result.ToString();
+
+            First_Data = true;
+            First_num = Result;
+            Second_Data = false;
+            
         }
     }
 }

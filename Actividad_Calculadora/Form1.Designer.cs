@@ -47,12 +47,12 @@
             this.clear_btn = new System.Windows.Forms.Button();
             this.memory_btn = new System.Windows.Forms.Button();
             this.TextBoard = new System.Windows.Forms.TextBox();
-            this.ListOfMemory = new System.Windows.Forms.ComboBox();
             this.History = new System.Windows.Forms.ListBox();
             this.History_Label = new System.Windows.Forms.Label();
             this.Memory_label = new System.Windows.Forms.Label();
             this.point = new System.Windows.Forms.Button();
             this.operation_label = new System.Windows.Forms.Label();
+            this.ListOfMemory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Number_7
@@ -319,17 +319,6 @@
             this.TextBoard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TextBoard.TextChanged += new System.EventHandler(this.TextBoard_TextChanged);
             // 
-            // ListOfMemory
-            // 
-            this.ListOfMemory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ListOfMemory.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListOfMemory.FormattingEnabled = true;
-            this.ListOfMemory.Location = new System.Drawing.Point(500, 68);
-            this.ListOfMemory.Name = "ListOfMemory";
-            this.ListOfMemory.Size = new System.Drawing.Size(121, 24);
-            this.ListOfMemory.TabIndex = 19;
-            this.ListOfMemory.SelectedIndexChanged += new System.EventHandler(this.ListOfMemory_SelectedIndexChanged);
-            // 
             // History
             // 
             this.History.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -338,8 +327,9 @@
             this.History.ItemHeight = 16;
             this.History.Location = new System.Drawing.Point(654, 68);
             this.History.Name = "History";
-            this.History.Size = new System.Drawing.Size(120, 84);
+            this.History.Size = new System.Drawing.Size(120, 292);
             this.History.TabIndex = 21;
+            this.History.SelectedIndexChanged += new System.EventHandler(this.History_SelectedIndexChanged);
             // 
             // History_Label
             // 
@@ -385,18 +375,27 @@
             this.operation_label.TabIndex = 25;
             this.operation_label.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // ListOfMemory
+            // 
+            this.ListOfMemory.FormattingEnabled = true;
+            this.ListOfMemory.Location = new System.Drawing.Point(500, 68);
+            this.ListOfMemory.Name = "ListOfMemory";
+            this.ListOfMemory.Size = new System.Drawing.Size(120, 290);
+            this.ListOfMemory.TabIndex = 26;
+            this.ListOfMemory.SelectedIndexChanged += new System.EventHandler(this.ListOfMemory_SelectedIndexChanged);
+            // 
             // Fondo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ListOfMemory);
             this.Controls.Add(this.operation_label);
             this.Controls.Add(this.point);
             this.Controls.Add(this.Memory_label);
             this.Controls.Add(this.History_Label);
             this.Controls.Add(this.History);
-            this.Controls.Add(this.ListOfMemory);
             this.Controls.Add(this.TextBoard);
             this.Controls.Add(this.memory_btn);
             this.Controls.Add(this.clear_btn);
@@ -446,12 +445,12 @@
         private System.Windows.Forms.Button clear_btn;
         private System.Windows.Forms.Button memory_btn;
         private System.Windows.Forms.TextBox TextBoard;
-        private System.Windows.Forms.ComboBox ListOfMemory;
         private System.Windows.Forms.ListBox History;
         private System.Windows.Forms.Label History_Label;
         private System.Windows.Forms.Label Memory_label;
         private System.Windows.Forms.Button point;
         private System.Windows.Forms.Label operation_label;
+        private System.Windows.Forms.ListBox ListOfMemory;
     }
 }
 
