@@ -53,6 +53,7 @@ namespace Actividad_Calculadora
             //Asignar el simbolo
             Operation = "/";
             Operation_Key = 4;
+            operation_label.Text = First_num + " " + Operation;
 
         }
 
@@ -83,18 +84,12 @@ namespace Actividad_Calculadora
                     }
                     else
                     {
-                        operation_label.Text = TextBoard.Text + " " + Operation;
                         //Dato guardado correctamente
                         First_Data = true;
-
                     }
                 }
                 else if (!Second_Data)
                 {
-                    if (buffer)
-                    {
-                        operation_label.Text = First_num + " " + Operation + " =";
-                    }
                     if (!(float.TryParse(TextBoard.Text, out Second_num)))
                     {
                         MessageBox.Show("No se pueden ingresar letras");
@@ -260,6 +255,7 @@ namespace Actividad_Calculadora
             //Asignar el simbolo
             Operation = "+";
             Operation_Key = 1;
+            operation_label.Text = First_num + " " + Operation;
 
         }
 
@@ -273,7 +269,7 @@ namespace Actividad_Calculadora
             //Asignar el simbolo
             Operation = "-";
             Operation_Key = 2;
-
+            operation_label.Text = First_num + " " + Operation;
         }
 
         private void Mult_Click(object sender, EventArgs e)
@@ -285,7 +281,7 @@ namespace Actividad_Calculadora
             //Asignar el simbolo
             Operation = "*";
             Operation_Key = 3;
-
+            operation_label.Text = First_num + " " + Operation;
         }
 
         private void Memory_Click(object sender, EventArgs e)
@@ -309,10 +305,15 @@ namespace Actividad_Calculadora
             if (ListOfMemory.SelectedIndex >= 0)
             {
                 TextBoard.Text = ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString();
-                operation_label.Text = string.Empty;
-                First_Data = true;
-                float.TryParse(ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString(), out First_num);
-                Second_Data = false;
+                if (!First_Data)
+                {
+                    float.TryParse(ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString(), out First_num);
+                }
+                else
+                {
+                    float.TryParse(ListOfMemory.Items[ListOfMemory.SelectedIndex].ToString(), out Second_num);
+                    Second_Data = true;
+                }
             }
         }
 
