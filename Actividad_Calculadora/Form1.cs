@@ -50,10 +50,13 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
+            Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "/";
             Operation_Key = 4;
             operation_label.Text = First_num + " " + Operation;
+            buffer = false;
 
         }
 
@@ -62,7 +65,7 @@ namespace Actividad_Calculadora
             //Este es el igual pero le di click antes de cambiarle el nombre:(((
             Assing_number();
             Binary_Option();
-
+            buffer = true;
         }
         //Funcion que asignara el valor a las variables cada vez que es presionado un boton de operador
         public void Assing_number()
@@ -86,37 +89,52 @@ namespace Actividad_Calculadora
                     {
                         //Dato guardado correctamente
                         First_Data = true;
+                        TextBoard.Clear();
                     }
                 }
                 else if (!Second_Data)
                 {
                     if (!(float.TryParse(TextBoard.Text, out Second_num)))
                     {
-                        MessageBox.Show("No se pueden ingresar letras");
+                        //MessageBox.Show("No se pueden ingresar letras");
                     }
                     else
                     {
                         //Dato correctamente
                         Second_Data = true;
+                        TextBoard.Clear();
 
                     }
                 }
             }
             
-            Result_Data = false;
-            TextBoard.Clear();
+           // TextBoard.Clear();
         }
         public void Write(int num)
         {
             //Concatena los numeros en el cuadro de texto
-            if(Result_Data)
+            if (buffer)
+            {
+                clear();
+            }
+            else if(Result_Data)
             {
                 TextBoard.Clear();
+                Result_Data = false;
             }
             TextBoard.Text = TextBoard.Text + num;
         }
         public void Write(string str)
         {
+            if (buffer)
+            {
+                clear();
+            }
+            else if (Result_Data)
+            {
+                TextBoard.Clear();
+                Result_Data = false;
+            }
             TextBoard.Text = TextBoard.Text + str;
         }
 
@@ -177,13 +195,16 @@ namespace Actividad_Calculadora
 
         private void Clear_Click(object sender, EventArgs e)
         {
+            clear();
+        }
+        private void clear()
+        {
             TextBoard.Clear();
             operation_label.Text = string.Empty;
             First_Data = false;
             Second_Data = false;
             Result_Data = false;
         }
-
         public void Sent_To_History(float First, string Ope, float Second, float Result)
         {
             //Funcion que enviara los datos al historial para que se guarden 
@@ -252,10 +273,13 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
+            Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "+";
             Operation_Key = 1;
             operation_label.Text = First_num + " " + Operation;
+            buffer = false;
 
         }
 
@@ -265,11 +289,14 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
+            Assing_number();
+            Binary_Option();
 
             //Asignar el simbolo
             Operation = "-";
             Operation_Key = 2;
             operation_label.Text = First_num + " " + Operation;
+            buffer = false;
         }
 
         private void Mult_Click(object sender, EventArgs e)
@@ -278,10 +305,13 @@ namespace Actividad_Calculadora
             //Primera vez que se presiona el boton asigna el valor
             Assing_number();
             Binary_Option();
+            Assing_number();
+            Binary_Option();
             //Asignar el simbolo
             Operation = "*";
             Operation_Key = 3;
             operation_label.Text = First_num + " " + Operation;
+            buffer = false;
         }
 
         private void Memory_Click(object sender, EventArgs e)
@@ -333,6 +363,7 @@ namespace Actividad_Calculadora
 
             First_Data = true;
             First_num = Result;
+            Result_Data = true;
             Second_Data = false;
             
         }
